@@ -161,6 +161,15 @@ body {
     font-size: 28px;
 }
 
+.offer__heading-link {
+    color: white;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        color: $primary-color;
+    }
+}
+
 .offer__description {
     font-family: $secondary-font;
 }
@@ -267,6 +276,124 @@ body {
     padding: $spacing;
     text-align: center;   
 }
+
+/* destination page */
+.site-header--destinations {
+    border-bottom: 2px solid $primary-color;
+}
+
+.main-heading {
+    font-size: 36px;
+    font-weight: 400;
+    color: $primary-color;
+    margin: 0;
+    padding-top: $spacing-double;
+}
+
+.smaller-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin: $spacing 0;
+}
+
+.text__paragraph {
+    font-family: $secondary-font;
+    margin: $spacing 0;
+}
+
+.text__image {
+    width: 100%;
+    margin: $spacing 0;
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: $spacing;
+        .offers {
+            display:block;
+            margin-top: $spacing-double;
+        }
+        .offer {
+            margin-bottom: $spacing;
+        }
+    }
+}
+
+/* offer page */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing;
+    @media screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.gallery__image {
+    max-width: 100%;
+}
+
+.tags {
+    margin-top: $spacing;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing;
+    @media screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+}
+
+.tag {
+    background-color: $card-background;
+    padding: $spacing;
+    font-family: $secondary-font;
+}
+
+.tag--price {
+    background-color: $primary-color;
+    color: white;
+}
+
+@media screen and (min-width: 1200px) {
+    .offer-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: $spacing;
+        .offer {
+            grid-column: 1 / 2;
+        }
+    }
+}
+
+.tag__heading {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $date-color;
+}
+
+.tag__heading--price {
+    color: white;
+}
+
+.tag__text {
+    margin: 0;
+    padding: 0;
+}
+
+.tag__text--price {
+    font-weight: 700;
+    font-size: 28px;
+}
+
 
 
 
